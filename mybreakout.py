@@ -1,5 +1,9 @@
+#Quicksand font by Andrew Paglinawan
+
 import pygame,random,time
-py.game(init)
+pygame.init()
+
+#Game display options
 
 gwidth = 640
 gheight = 480
@@ -12,4 +16,13 @@ pygame.display.set_caption('Jail Break')
 
 #sets width and height
 
-def text
+def txtaes(color, size, text, x, y):
+    pygame.font.Font('bold', "quicksand.ttf")
+    txtfont=font.render(txt,True,color)
+    txtrect=txttxt.get_rect()
+    txtrect.center=x,y
+    screen.blit(txttxt,txtrect)
+
+#Game logic
+
+#Draw background
