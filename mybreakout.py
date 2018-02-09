@@ -14,6 +14,8 @@ fpsClock = pygame.time.Clock()
 song = 'music.ogg'
 pygame.mixer.music.load(song)
 pygame.mixer.music.play(loops=-1, start=0.0)
+pygame.display.set_caption('Jail Break')
+
 
 # Initialize display
 screen = pygame.display.set_mode([640,480])
