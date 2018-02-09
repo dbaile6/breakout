@@ -3,12 +3,14 @@
 #Original music by Dylan Bailey
 
 
-import pygame, sys
+import pygame, sys, time
 import py
 
 #Code for Music
 pygame.init()
 pygame.mixer.init()
+FPS = 30
+fpsClock = pygame.time.Clock()
 song = 'music.ogg'
 pygame.mixer.music.load(song)
 pygame.mixer.music.play(loops=-1, start=0.0)
@@ -49,16 +51,16 @@ def msg(txt,color,size,x,y):
     msgrect.center=x,y
     screen.blit(msgtxt,msgrect)
 
-# Create ball movement settings
+# Create ball movement settings (Need to rewrite to put in classes)
 
-ball_x = 50
-ball_y = 100
-ball_radius = 10
+ball_x = 100
+ball_y = 200
+ball_radius = 8
 ball_color = [222,50,50]
-ball_speed_x = 3
-ball_speed_y = 5
+ball_speed_x = 4
+ball_speed_y = 6
 
-# Movement settings for the paddle
+# Movement settings for the paddle (Need to rewrite to put in classes)
 
 paddle_x = 20
 paddle_y = 450
